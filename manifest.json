@@ -1,0 +1,41 @@
+{
+  "name": "Extension name",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Your description",
+  "icons": {
+    "16": "_locales/img/icon.png",
+    "128": "_locales/img/icon.png"
+  },
+  "default_locale": "vi",
+  "browser_action": {
+    "default_icon": {
+      "19": "_locales/img/icon.png",
+      "38": "_locales/img/icon.png"
+    },
+    "default_title": "Your title"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://Link-web*"
+      ],
+      "css": [
+        "_locales/css/css.css"
+      ],
+      "js": [
+        "_locales/js/js.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "_locales/css/css.css"
+  ],
+  "web_accessible_resources": [
+    "_locales/js/js.js"
+  ],
+  "permissions": [
+    "cookies",
+    "*://Link-web*"
+  ]
+}
