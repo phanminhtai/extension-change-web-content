@@ -1,0 +1,16 @@
+{
+  "prompt_for_name": {
+    "message": "Your message",
+    "description": "Your description"
+  },
+  "hello": {
+    "message": "Your message",
+    "description": "Your description",
+    "placeholders": {
+      "user": {
+        "content": "Your content",
+        "example": "Your example"
+      }
+    }
+  }
+}
