@@ -4,38 +4,38 @@
   "manifest_version": 2,
   "description": "Your description",
   "icons": {
-    "16": "_locales/img/icon.png",
-    "128": "_locales/img/icon.png"
+    "16": "Link-your-icon",
+    "128": "Link-your-icon"
   },
   "default_locale": "vi",
   "browser_action": {
     "default_icon": {
-      "19": "_locales/img/icon.png",
-      "38": "_locales/img/icon.png"
+      "19": "Link-your-icon",
+      "38": "Link-your-icon"
     },
     "default_title": "Your title"
   },
   "content_scripts": [
     {
       "matches": [
-        "*://Link-web*"
+        "*://Link-web-need-change/*"
       ],
       "css": [
-        "_locales/css/css.css"
+        "css/css.css"
       ],
       "js": [
-        "_locales/js/js.js"
+        "js/js.js"
       ]
     }
   ],
   "web_accessible_resources": [
-    "_locales/css/css.css"
+    "css/css.css"
   ],
   "web_accessible_resources": [
-    "_locales/js/js.js"
+    "js/js.js"
   ],
   "permissions": [
     "cookies",
-    "*://Link-web*"
+    "*://Link-web-need-change/*"
   ]
 }
